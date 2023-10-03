@@ -76,10 +76,6 @@ static srtp_err_status_t srtp_hmac_alloc (srtp_auth_t **a, int key_len, int out_
     /* check output length - should be less than 20 bytes */
     if (out_len > 20) {
         return srtp_err_status_bad_param;
-    } 
-	/* check output length - should be less than 20 bytes */
-    if (out_len > 20) {
-        return srtp_err_status_bad_param;
     }
 
     /* allocate memory for auth and srtp_hmac_ctx_t structures */
